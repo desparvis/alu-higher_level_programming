@@ -1,2 +1,3 @@
 #!/bin/bash
-[ -z "$PYCODE" ] && echo "PYCODE is not set" && exit 1 || python3 -c "$PYCODE"
+[ -z "$PYCODE" ] && echo "PYCODE environment variable is not set" && exit 1 || python3 -c "$PYCODE"
+
