@@ -12,4 +12,3 @@ elif lastD == 0:
     print(f"{string} {number} is {lastD} and is 0")
 else:
     print(f"{string} {number} is {lastD} and is less than 6 and not 0")
-
