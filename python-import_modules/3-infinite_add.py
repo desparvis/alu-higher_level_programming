@@ -7,7 +7,5 @@ def main():
     for arg in argv:
         result += int(arg)
     print(result)
-
-
 if __name__ == "__main__":
     main()
