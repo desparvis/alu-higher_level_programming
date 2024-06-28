@@ -6,9 +6,9 @@ def main():
     argc = len(argv)
 
     if argc == 0:
-        print("Number of arguments: 0.")
+        print("0 arguments")
     else :
-        print("Number of arguments: {} argument:".format(argc))
+        print(" {} argument:".format(argc))
         for i in range(argc):
             print("{}: {}".format(i + 1, argv[i]))
 
