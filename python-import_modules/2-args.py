@@ -7,8 +7,11 @@ def main():
 
     if argc == 0:
         print("0 arguments")
-    else :
-        print("{} argument:".format(argc))
+    else:
+        if argc == 1:
+            print("1 argument:")
+        else:
+            print("{} argument:".format(argc))
         for i in range(argc):
             print("{}: {}".format(i + 1, argv[i]))
 
