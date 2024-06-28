@@ -16,6 +16,6 @@ def main():
         for i in range(argc):
             print("{}: {}".format(i + 1, argv[i]))
 
+
 if __name__ == "__main__":
     main()
-
