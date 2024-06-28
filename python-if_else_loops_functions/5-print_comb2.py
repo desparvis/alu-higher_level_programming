@@ -2,5 +2,5 @@
 for h in range(100):
     if h < 99:
     print("{:02}, ".format(h), end="")
-else
+else:
 print("{:02}, ".format(h))
