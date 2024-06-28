@@ -8,6 +8,6 @@ def main():
     for c in cases:
         strings = "lower" if islower(c) else "upper"
         print("{} is {}".format(c, strings))
-if __name__ == main:
+if __name__ == "__main__"
     main()
 ~            
