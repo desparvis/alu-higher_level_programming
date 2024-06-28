@@ -6,7 +6,7 @@ def main():
     argc = len(argv)
 
     if argc == 0:
-        print("0 arguments")
+        print("0 arguments.")
     else:
         if argc == 1:
             print("1 argument:")
