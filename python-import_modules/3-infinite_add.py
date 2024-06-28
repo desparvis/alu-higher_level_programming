@@ -5,8 +5,8 @@ def main():
     argv = sys.argv[1:]
     total = 0
     for arg in argv:
-        sum += int(arg)
-    print(sum)
+        result += int(arg)
+    print(result)
 
 
 if __name__ == "__main__":
