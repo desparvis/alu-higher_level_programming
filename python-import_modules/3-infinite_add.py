@@ -3,7 +3,7 @@ import sys
 
 def main():
     argv = sys.argv[1:]
-    total = 0
+    result = 0
     for arg in argv:
         result += int(arg)
     print(result)
