@@ -13,5 +13,4 @@ print("{} is {}".format(c, result))
 
 
 if __name__ == "__main__":
-main()
-~            
+main()           
