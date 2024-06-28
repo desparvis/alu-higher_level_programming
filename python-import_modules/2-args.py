@@ -11,7 +11,7 @@ def main():
         if argc == 1:
             print("1 argument:")
         else:
-            print("{} argument:".format(argc))
+            print("{} arguments:".format(argc))
         for i in range(argc):
             print("{}: {}".format(i + 1, argv[i]))
 
