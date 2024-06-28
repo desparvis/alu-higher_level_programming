@@ -5,4 +5,4 @@ for l in range(10):
             if l == 0 and k == 1:
                 print("{:02}".format(l * 10 + k), end="")
             else:
-                print(", {:02} ".format(l * 10 + k), end="")
+                print(", {:02}".format(l * 10 + k), end="")
