@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-def uppercase(s):
+def uppercase(str):
     result = ""
-    for char in s:
+    for char in str:
         if ord(char) >= 97 and ord(char) <= 122:
-        uppercaseu = chr(ord(char) - 32)
-        result += uppercaseu
+            rizz = chr(ord(char) - 32)
+            result += rizz
         else:
-        result += char
+            result += char
     print("{}".format(result))
-if __name__ == "__main":
+if __name__ == "__main__":
     uppercase("best")
     uppercase("Best School 98 Battery street")
