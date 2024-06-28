@@ -6,8 +6,8 @@ def islower(c):
 def main():
     cases = ['a', 'H', 'A', '3', 'g']
     for c in cases:
-        strings = "lower" if islower(c) else "upper"
-        print("{} is {}".format(c, strings))
-if __name__ == "__main__"
+        results = "lower" if islower(c) else "upper"
+        print("{} is {}".format(c, results))
+if __name__ == "__main__":
     main()
 ~            
