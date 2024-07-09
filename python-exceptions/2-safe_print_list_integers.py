@@ -9,10 +9,8 @@ def safe_print_list_integers(my_list=[], x=0):
                     count += 1
             except (ValueError, TypeError):
                 continue
-            except IndexError:
-                break
-    except:
-        raise
+        except:
+            raise
 
     print()  # Ensure a newline after printing
     return count
