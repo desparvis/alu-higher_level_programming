@@ -3,6 +3,7 @@
 class square
 """
 
+
 class Square:
     """
     class square on some mad stuff
