@@ -5,7 +5,7 @@ Square class
 
 class Square:
     """
-    sqaure defining class
+    square defining class
     """
 
 
@@ -14,4 +14,4 @@ class Square:
         Private instance size
         """
 
-        self.size = size
+        self.__size = size
