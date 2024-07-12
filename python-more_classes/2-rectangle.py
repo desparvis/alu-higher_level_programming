@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-module stuff
+module is being documented
 """
-
 
 class Rectangle:
     """
