@@ -2,6 +2,8 @@
 """
 modules
 """
+
+
 class Square:
     """
     A class that defines a square with size and position attributes,
@@ -49,7 +51,7 @@ class Square:
         return self.__size ** 2
 
     def my_print(self):
-        """Print the square using '#' characters, respecting position offsets."""
+        """Print the square."""
         if self.__size == 0:
             print("")
         else:
