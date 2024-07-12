@@ -8,8 +8,10 @@ class Square:
     """
     class stuff mens
     """
+    @property
     def __init__(self, size=0):
         self.size = size
+    @size.setter
     def size(self):
         return self.__size
     def size(self, value):
