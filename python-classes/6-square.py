@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""
+modules
+"""
 class Square:
     """
     A class that defines a square with size and position attributes,
