@@ -8,12 +8,13 @@ class Square:
     """
     class stuff mens
     """
-    @property
+    
     def __init__(self, size=0):
         self.size = size
-    @size.setter
+    @property
     def size(self):
         return self.__size
+    @size.setter
     def size(self, value):
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
