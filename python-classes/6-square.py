@@ -2,6 +2,8 @@
 """
 module and stuff
 """
+
+
 class Square:
     """
     A class that defines a square with size and position attributes,
@@ -66,27 +68,4 @@ class Square:
                 spaces = " " * self.__position[0]
                 hashes = "#" * self.__size
                 print(spaces + hashes)
-
-# Testing the Square class
-if __name__ == "__main__":
-    try:
-        my_square = Square(3, (2, 1))
-        my_square.my_print()
-        print("--")
-
-        my_square.size = 5
-        my_square.position = (1, 2)
-        my_square.my_print()
-        print("--")
-
-        my_square.size = 0
-        my_square.my_print()
-        print("--")
-
-        print("Area:", my_square.area())
-
-    except TypeError as e:
-        print(e)
-    except ValueError as e:
-        print(e)
 
