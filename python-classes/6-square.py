@@ -1,9 +1,3 @@
-#!/usr/bin/python3
-"""
-module and stuff
-"""
-
-
 class Square:
     """
     A class that defines a square with size and position attributes,
@@ -12,15 +6,7 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """
-        Initialize a Square instance.
-
-        Args:
-        - size (int): Size of the square's side length. Default is 0.
-        - position (tuple): Position offset for printing the square. Default is (0, 0).
-
-        Raises:
-        - TypeError: If size is not an integer or position is not a tuple of two integers.
-        - ValueError: If size is less than 0 or position contains negative integers.
+        Initialize
         """
         self.size = size
         self.position = position
@@ -47,7 +33,8 @@ class Square:
     @position.setter
     def position(self, value):
         """Setter method for position."""
-        if not isinstance(value, tuple) or len(value) != 2 or not all(isinstance(i, int) for i in value):
+        if not isinstance(value, tuple) or len(value) != 2 \
+                or not all(isinstance(i, int) for i in value):
             raise TypeError("position must be a tuple of 2 positive integers")
         elif value[0] < 0 or value[1] < 0:
             raise ValueError("position must be a tuple of 2 positive integers")
@@ -68,4 +55,3 @@ class Square:
                 spaces = " " * self.__position[0]
                 hashes = "#" * self.__size
                 print(spaces + hashes)
-
