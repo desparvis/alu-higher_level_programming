@@ -3,6 +3,7 @@
 define class
 """
 
+
 class Square:
     """
     class stuff mens
