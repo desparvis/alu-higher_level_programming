@@ -50,6 +50,6 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         recstr = ""
-        for _ in range(self._height):
+        for _ in range(self.__height):
             rectrstr += "#" * self.__width
         return rectrstr.rstrp()
