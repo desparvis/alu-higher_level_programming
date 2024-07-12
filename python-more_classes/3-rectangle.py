@@ -52,4 +52,4 @@ class Rectangle:
         recstr = ""
         for _ in range(self.__height):
             recstr += "#" * self.__width
-        return recstr.rstrp()
+        return recstr.rstrip()
