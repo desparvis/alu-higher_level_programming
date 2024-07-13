@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""
-module documenting
-"""
+"""define list"""
 
 
 class MyList(list):
-    """class"""
+    """list class"""
     def print_sorted(self):
-        """function"""
+        """sorted list"""
         print(sorted(self))
