@@ -1,6 +1,11 @@
 #!/usr/bin/python3
-"""module is documented"""
+"""
+modules
+"""
 
 
 def def is_same_class(obj, a_class):
+    """
+    function
+    """
     return type(obj) is a_class
