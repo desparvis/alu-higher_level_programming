@@ -3,12 +3,9 @@
 module documenting
 """
 
+
 class MyList(list):
-    """
-    class documenting
-    """
+    """class"""
     def print_sorted(self):
-        """
-        function documenting
-        """
+        """function"""
         print(sorted(self))
