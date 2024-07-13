@@ -3,13 +3,12 @@
 module first
 """
 
-
 class Rectangle:
     """
     class rectangle
     """
     number_of_instances = 0
-    print_symbol = "#"
+    print_symbol = "#"  # Initialized to "#"
 
     def __init__(self, width=0, height=0):
         self.width = width
