@@ -11,5 +11,4 @@ class MyList(list):
         """
         function documenting
         """
-        sortedl = sorted(self)
-        print(sortedl)
+        print(sorted(self))
