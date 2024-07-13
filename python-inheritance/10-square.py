@@ -11,4 +11,4 @@ class Square(Rectangle):
         """Instantiation with size."""
         super().integer_validator("size", size)
         self.__size = size
-        super().integer_validator(size, size)
+        super().__init__(size, size)
