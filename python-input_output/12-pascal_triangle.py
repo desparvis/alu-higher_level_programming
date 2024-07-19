@@ -5,6 +5,9 @@ document the module always
 
 
 def pascal_triangle(n):
+    """
+    function has to be documented
+    """
     if n <= 0:
         return []
 
