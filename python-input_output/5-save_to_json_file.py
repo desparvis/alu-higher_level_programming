@@ -5,7 +5,7 @@ document module importing json
 import json
 
 
-def save_to_json_file(my_obj, filename:
+def save_to_json_file(my_obj, filename):
     """
     document function writing file using JSON
     """
