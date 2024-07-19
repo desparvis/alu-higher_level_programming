@@ -1,14 +1,9 @@
 #!/usr/bin/python3
-"""
-document module importing json
-"""
+"""import of modules"""
 import json
 
 
 def save_to_json_file(my_obj, filename):
-    """
-    document function writing file using JSON
-    """
-    with open(filename, 'w', encoding="utf-8") as a:
-        result = json.dumps(my_obj)
-        a.write(result)
+    """function hta saves to json files"""
+    with open(filename, "w", encoding="utf-8") as a:
+        json.dump(my_obj, a)
