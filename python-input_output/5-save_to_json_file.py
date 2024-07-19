@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
-module is well documented
+document module importing json
 """
 import json
 
 
 def save_to_json_file(my_obj, filename):
     """
-    function is well documented
+    document function writing file using JSON
     """
-    with open(filename, 'w' encoding="utf-8") as file:
-        string = file.dumps(my_obj)
-        file.write(string)
+    with open(filename, 'w', encoding="utf-8"):
+        result = json.dumps(my_obj)
+        file.write(result)
