@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 import json
+
+
 """
 module is well documented
 """
