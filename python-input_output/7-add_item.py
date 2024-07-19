@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-module needs documenting
+this module is well documenting
 """
 
 from sys import argv
