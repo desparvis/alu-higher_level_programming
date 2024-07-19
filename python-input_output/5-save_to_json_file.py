@@ -5,10 +5,10 @@ document module importing json
 import json
 
 
-def save_to_json_file(my_obj, filename) as file:
+def save_to_json_file(my_obj, filename) as files:
     """
     document function writing file using JSON
     """
     with open(filename, 'w', encoding="utf-8"):
         result = json.dumps(my_obj)
-        file.write(result)
+        files.write(result)
