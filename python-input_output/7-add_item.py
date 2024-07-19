@@ -12,6 +12,6 @@ except FileNotFoundError:
     json_list = []
 
 for i in argv[1:]:
-    json_list.append(argv)
+    json_list.append(i)
 
 save_to_json_file(json_list, filename)
