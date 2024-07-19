@@ -1,3 +1,2 @@
---showing description
-USE hbtn_0c_0;
+-- showing description
 SHOW CREATE TABLE first_table;
