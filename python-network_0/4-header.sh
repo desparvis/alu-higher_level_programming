@@ -1,3 +1,3 @@
 #!/bin/bash
 # header 4
-curl -s -H "X-HolbertonSchool-User-Id: 98" "$1"
+curl -sG "$1" -H "X-School-User-Id: 98"
