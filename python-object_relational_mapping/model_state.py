@@ -7,7 +7,7 @@ Base = declarative_base()
 
 
 class City(Base):
-    '''A class defination of a table in the sql'''
+    '''I function'''
     __tablename__ = 'cities'
 
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
