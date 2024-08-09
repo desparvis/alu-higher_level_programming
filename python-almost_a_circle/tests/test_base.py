@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""testing file"""
+"""lukaku"""
 
 import unittest
 
@@ -7,7 +7,7 @@ from models.base import Base
 
 
 class TestBase(unittest.TestCase):
-    """tesitn essential"""
+    """tests docstrings"""
 
     def test_id_auto(self):
         """Test automatic ID assignment"""
