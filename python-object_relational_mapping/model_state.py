@@ -10,6 +10,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
+
 class State(Base):
     """
     State class that represents the 'states' table in MySQL database.
@@ -25,9 +26,9 @@ class State(Base):
 
 
 if __name__ == "__main__":
-    # Replace 'your_username', 'your_password', and 'your_database' with actual values
-    engine = create_engine('mysql+mysqldb://your_username:your_password@localhost/your_database',
-                           pool_pre_ping=True)
+    engine = create_engine(
+        'mysql+mysqldb://your_username:your_password@localhost/your_database',
+        pool_pre_ping=True
+    )
 
-    # Create all tables in the engine (essentially, create the 'states' table)
     Base.metadata.create_all(engine)
