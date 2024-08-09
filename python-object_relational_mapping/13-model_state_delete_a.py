@@ -15,12 +15,16 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    Base.metadata.create_all(engine)
 
-    states = session.query(State).filter(State.name.contains('a')).all()
+    # Query all State objects where the name contains the letter 'a'
+    states_to_delete = session.query(State).filter(State.name.like('%a%')).all()
 
-    for state in states:
+    # Delete each state in the result
+    for state in states_to_delete:
         session.delete(state)
 
+    # Commit the transaction to finalize deletions
     session.commit()
+
+    # Close the session
     session.close()
