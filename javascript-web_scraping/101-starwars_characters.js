@@ -21,6 +21,12 @@ request(apiUrl, (err, response, body) => {
   if (data.title) {
     const characters = data.characters;
 
+    if (characters.length === 0) {
+      console.log('Characters not found');
+      return;
+    }
+
+    let count = 0;
     characters.forEach((characterUrl) => {
       request(characterUrl, (err, response, body) => {
         if (err) {
@@ -28,8 +34,10 @@ request(apiUrl, (err, response, body) => {
           return;
         }
 
-        const characterData = JSON.parse(body);
-        console.log(characterData.name);
+        count++;
+        if (count === characters.length) {
+          console.log('OK');
+        }
       });
     });
   } else {
