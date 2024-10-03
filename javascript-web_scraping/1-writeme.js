@@ -11,9 +11,7 @@ if (!filePath || !stringToWrite) {
 
 fs.writeFile(filePath, stringToWrite, 'utf8', (err) => {
   if (err) {
-    console.error('An error occurred while writing to the file:', err);
+    console.error(err);
     return;
   }
-  console.log('File written successfully');
 });
-
