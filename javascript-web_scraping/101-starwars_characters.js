@@ -28,12 +28,7 @@ request(apiUrl, (err, response, body) => {
 
     let count = 0;
     characters.forEach((characterUrl) => {
-      request(characterUrl, (err, response, body) => {
-        if (err) {
-          console.error(err);
-          return;
-        }
-
+      request(characterUrl, (err) => {
         count++;
         if (count === characters.length) {
           console.log('OK');
