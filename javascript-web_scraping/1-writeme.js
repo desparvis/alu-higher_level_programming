@@ -9,6 +9,10 @@ if (filePath && stringToWrite) {
   fs.writeFile(filePath, stringToWrite, 'utf8', (err) => {
     if (err) {
       console.error(err);
+      return;
     }
   });
+} else {
+  // Log the arguments for debugging
+  console.error('File path or string to write is missing.');
 }
